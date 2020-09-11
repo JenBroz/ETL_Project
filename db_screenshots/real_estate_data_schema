@@ -1,0 +1,73 @@
+-- Create table for_sales
+
+CREATE TABLE for_sales (
+  type_ VARCHAR(50) NOT NULL,
+  address TEXT NOT NULL,
+  rent_per_mo MONEY,
+  city VARCHAR(50) NOT NULL,
+  st VARCHAR(2) NOT NULL,
+  zip_code NCHAR(10) NOT NULL,
+  sq_ft NCHAR(10),
+  href VARCHAR(4000)
+  PRIMARY KEY (zip_code)
+	
+-- Create table for_rent
+
+CREATE TABLE for_rent (
+  type_ VARCHAR(50) NOT NULL,
+  address TEXT NOT NULL,
+  rent_per_mo MONEY,
+  city VARCHAR(50) NOT NULL,
+  st VARCHAR(2) NOT NULL,
+  zip_code NCHAR(10) NOT NULL,
+  sq_ft NCHAR(10),
+  href VARCHAR(4000)
+  PRIMARY KEY (zip_code)
+);
+
+-- Create table for_rent_97
+
+CREATE TABLE for_rent_97 (
+  type_ VARCHAR(50) NOT NULL,
+  address TEXT NOT NULL,
+  price MONEY,
+  city VARCHAR(50) NOT NULL,
+  st VARCHAR(2) NOT NULL,
+  zip_code NCHAR(10) NOT NULL,
+  sq_ft NCHAR(10),
+  href VARCHAR(4000),
+  PRIMARY KEY (address)
+	
+-- Create table for_sale_97
+
+CREATE TABLE for_sale_97 (
+  type_ VARCHAR(50) NOT NULL,
+  address TEXT NOT NULL,
+  price MONEY,
+  city VARCHAR(50) NOT NULL,
+  st VARCHAR(2) NOT NULL,
+  zip_code NCHAR(10) NOT NULL,
+  sq_ft NCHAR(10),
+  href VARCHAR(4000),
+  PRIMARY KEY (address)
+
+--create table lat_long_rent
+
+CREATE TABLE lat_long_rent (
+	address TEXT NOT NULL,
+	lat NCHAR (20),
+	lon NCHAR (20),
+	PRIMARY KEY (address)
+ );
+
+-- Create table lat_long_sales
+
+CREATE TABLE lat_long_sales (
+	address TEXT NOT NULL,
+	lat NCHAR (20),
+	lon NCHAR (20),
+	PRIMARY KEY (address)
+ );
+
+
+
